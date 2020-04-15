@@ -12,14 +12,9 @@
     https://pypi.org/project/chord/
     -->
   	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Chord Diagram</title>
+    <title>Dessert Flavor Pairings</title>
     <!-- Google Fonts -->
     <script src="https://d3js.org/d3.v5.min.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Bangers"
-      rel="stylesheet"
-      type="text/css"
-    />
     <link
       href="https://fonts.googleapis.com/css?family=Oswald"
       rel="stylesheet"
@@ -39,23 +34,25 @@
       #chart-f24379c7 {
 
         font-size: 16px;
-        font-family: "Bangers", sans-serif;
+        font-family: fantasy;
         text-align: center;
         fill: #454545;
       }
 
       #chart-f24379c7 svg {
-        max-width: 700px;
+        max-width: 800;
       }
 
-      @media (min-width: 600px) {
+      @media (min-width: 800) {
 				#chart-f24379c7{
-					font-size: 20px;
+					font-size: 16px;
 				}
 			}
     </style>
   </head>
   <body>
+    <h2>Top Dessert Flavor Pairings</h2>
+    <p> 7,235 Dessert Recipes from epicurious.</p>
     <div id="chart-f24379c7" class="chord"></div>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
@@ -73,13 +70,13 @@
 
         script2.onload = function () {
           margin = {
-          left: 0,
+          left: 100,
           top: 0,
-          right: 0,
+          right: 100,
           bottom: 0
         };
-        width = Math.min(window.innerWidth, 700) - margin.left - margin.right;
-        height = Math.min(window.innerWidth, 700) - margin.top - margin.bottom;
+        width = Math.min(window.innerWidth, 1000) - margin.left - margin.right;
+        height = Math.min(window.innerWidth, 1000) - margin.top - margin.bottom;
         innerRadius = Math.min(width, height) * 0.39;
         outerRadius = innerRadius * 1.1;
 
@@ -412,8 +409,5 @@
       document.body.appendChild(script);
     </script>
     <script></script>
-    
-    <iframe src="https://drive.google.com/file/d/1Ibm6sQp5iw7-psOVRQzhGf-3fWEsEF-2/preview" width="640" height="480"></iframe>
   </body>
 </html>
-
