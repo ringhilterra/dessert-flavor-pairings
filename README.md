@@ -2,5 +2,5 @@
 
 
 
-interactive website: https://github.com/ringhilterra/dessert-flavor-pairings
+interactive website: https://ringhilterra.github.io/dessert-flavor-pairings/
 
